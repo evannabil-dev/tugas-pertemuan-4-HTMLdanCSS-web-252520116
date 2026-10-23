@@ -1,0 +1,93 @@
+/* Box-sizing: width sudah termasuk padding dan border */
+* { box-sizing: border-box; }
+
+/* Selector ELEMEN: pengaturan dasar halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #22396f;
+    color: rgb(51, 65, 85);
+    line-height: 1.7;
+}
+
+/* Selector CLASS: kotak utama */
+.kotak {
+    width: 560px;
+    margin: 40px auto;
+    padding: 32px; 
+    background-color: #fcf1d0;
+    border: 2px solid #22396f;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(15, 60, 45, 0.15);
+}
+
+/* Selector ID: kepala profil */
+#profil-header {
+    text-align: center;
+    padding-bottom: 16px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #000000;
+}
+
+/* Selector GRUP: judul h1 dan h2 memakai warna sama */
+h1, h2 {
+    color: #010736;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0 0 4px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 24px 0 8px;
+}
+
+/* Selector CLASS: teks jurusan */
+.jurusan {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Selector TURUNAN: paragraf di dalam .kotak */
+.kotak p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Paragraf jurusan tetap rata tengah */
+.kotak .jurusan {
+    text-align: center;
+}
+
+/* Daftar keahlian: label sebaris */
+#keahlian {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#keahlian li {
+    display: inline-block;
+    margin: 0 6px 8px 0;
+    padding: 4px 14px;
+    background-color: #d8eadf;
+    color: #22396F;
+    border: 1px solid #b7cfc2;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+/* tombol / tautan (inline-block #2) */
+.tombol {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 24px;
+    background-color: #0D1C42;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
